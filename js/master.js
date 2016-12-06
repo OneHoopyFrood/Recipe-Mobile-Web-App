@@ -23,7 +23,9 @@ window.onload = function () {
   // Get the recipe data (someday from database)
   var recipeData;
   var recipeDataPromise = $.get(data.recipes).then(function(res){
-    recipeData = res.data;
+    recipeData = res.data.sort(function(a,b) {
+      return a.rating < b.rating
+    });
   })
 
   Promise.all([recipeTemplatePromise, recipeDataPromise]).then(function(){
@@ -35,7 +37,7 @@ window.onload = function () {
       })
 
       $(".recipe").forEach(function (node) {
-        node.addEventListener("touchend", function (e) {
+        node.addEventListener("touchstart", function (e) {
           $(".recipe").forEach(function (oNode) {
             oNode.classList.remove("focus")
           })
@@ -46,7 +48,7 @@ window.onload = function () {
   function ratingToIcon(num) {
     switch (num){
       case 1:
-        return "fa-thumbs-down text-brown"
+        return "fa-thumbs-down text-dark-green"
         break
       case 2:
         return "fa-thumbs-up text-blue"

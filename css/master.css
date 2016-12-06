@@ -1,26 +1,36 @@
 body{
-  background-color: #555;
+  background-color: #eee;
 }
+.text-blue {
+  color: #455ba6;
+}
+.text-red {
+  color: #ff5454;
+}
+.text-brown {
+  color: #683F34;
+}
+
 .recipe {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #777;
 
-  height: 100px;
+  height: 80px;
   overflow: hidden;
   position: relative;
 
+  border: 1px solid #ccc;
   box-shadow: 1px 2px 6px #333;
-  margin: 6px;
-  transition: margin .5s, height .5s;
+  margin: 8px;
+  transition: all .5s;
 }
 .recipe.focus {
-  height: 200px;
-  margin-bottom: 10px;
-}
-.recipe.focus:not(:first-child) {
-  margin-top: 10px;
+  height: 180px;
+  margin: 15px 8px;
+  box-shadow: 3px 4px 14px #333;
+  transform: scale(1.025);
 }
 .recipe .overlay {
   height: 100%;
@@ -34,6 +44,7 @@ body{
   right: 0;
   padding: 5px 8px 8px 35px;
   text-align: right;
+  text-shadow: 0 0 5px #fff;
 }
 .recipe .text-content h1 {
   font-size: 1.1em;

@@ -26,3 +26,10 @@ h1 {
 .text-dark-green {
     color: #496633;
 }
+
+.addRecipeBtn {
+  font-size: 3em;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}

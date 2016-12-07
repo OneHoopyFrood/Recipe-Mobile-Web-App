@@ -1,6 +1,8 @@
+// jQuery like functions
 var $ = function (selector) {
   return document.querySelectorAll(selector)
 }
+
 $.get = function (url) {
   return new Promise(function (success, error) {
     var req = new XMLHttpRequest()
@@ -25,4 +27,17 @@ $.get = function (url) {
       }
     }
   })
+}
+
+// _lodash like functions
+var _ = {};
+_.find = function(list, comparitor) {
+  for(var item in list) {
+    if (list.hasOwnProperty(item)){
+      if(comparitor(list[item]) == true) {
+        return list[item];
+      }
+    }
+  }
+  return null;
 }

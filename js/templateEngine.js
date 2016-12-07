@@ -2,7 +2,7 @@
 var Template = function (html) {
   this.textContent = html
 }
-Template.prototype.getText = function (viewdata) {
+Template.prototype.getHtml = function (viewdata) {
   var returnHtml = this.textContent
   for(var x in viewdata){
     var re = re = "{{\\s?" + x + "\\s?}}"
@@ -12,6 +12,6 @@ Template.prototype.getText = function (viewdata) {
 }
 Template.prototype.getNode = function (viewdata) {
   var div = document.createElement("div")
-  div.innerHTML = this.getText(viewdata)
+  div.innerHTML = this.getHtml(viewdata)
   return div.firstChild
 }

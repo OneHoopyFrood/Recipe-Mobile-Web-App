@@ -1,35 +1,58 @@
+html, body {
+  height: 100%;
+}
 body {
-    background-color: #eee;
-    font-family: 'Slabo', 'Calibri', Arial;
-    font-size: 14px;
-    color: #222;
+  background-color: #eee;
+  font-family: 'Slabo', 'Calibri', Arial;
+  font-size: 14px;
+  color: #222;
 }
-
 h1, h2, h3, h4 {
-    font-weight: bold;
-    font-family: 'Aref Ruqaa', Helvetica;
-    line-height: 1.5em;
+  font-weight: bold;
+  font-family: 'Aref Ruqaa', Helvetica;
+  line-height: 1.5em;
 }
-
 h1 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
-
 .text-blue {
-    color: #455ba6;
+  color: #455ba6;
 }
-
 .text-red {
-    color: #ff5454;
+  color: #ff5454;
 }
-
+.text-green {
+  color: #318935;
+}
 .text-dark-green {
-    color: #496633;
+  color: #496633;
 }
-
-.addRecipeBtn {
+#header {
+  background-color: #333;
+  color: #ddd;
+  text-align: center;
+  font-size: 1.6em;
+  border-bottom: 2px groove #ccc;
+  padding-bottom: 8px;
+}
+#mainview {
+  overflow-y: auto;
+  height: calc(100% - 120px);
+}
+#footer {
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  border-top: 2px ridge #ccc;
+}
+#footer i.fa {
   font-size: 3em;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
+}
+#footer div {
+  text-align: center;
+  padding: 8px 0;
+  width: 50%;
+}
+#footer div:not(:last-child) {
+  /*border-right: 2px groove #ccc;*/
 }

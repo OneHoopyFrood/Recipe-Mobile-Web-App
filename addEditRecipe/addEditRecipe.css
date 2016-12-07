@@ -1,0 +1,24 @@
+form.addEditRecipeForm {
+  margin: 8px;
+}
+form input:not([type="file"]),
+form textarea,
+.picUploadBtn {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 4px 0;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+.picUploadBtn {
+  background-color: #318935;
+  border-color: #37993b;
+  color: #ddd;
+}
+#recipeInstructions {
+  height: 100px;
+}
+#picUpload {
+  display: none;
+}

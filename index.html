@@ -20,7 +20,7 @@
   <script src="/js/templateEngine.js" charset="utf-8"></script>
 
   <!-- Pages -->
-  <script src="/newRecipe/newRecipe.js" charset="utf-8"></script>
+  <script src="/addEditRecipe/addEditRecipe.js" charset="utf-8"></script>
   <script src="/recipeList/recipeList.js" charset="utf-8"></script>
 
   <!-- App -->
@@ -28,11 +28,20 @@
   <script src="/js/master.js" charset="utf-8"></script>
 </head>
 <body>
+  <header id="header">
+    <h1></h1>
+  </header>
   <section id="mainview">
   </section>
   <section id="footer">
+    <div class="listRecipes">
+      <a href="#/recipeList"><i class="fa fa-list text-blue"></i></a>
+    </div>
+    <div class="whatToMake">
+      <a href="#/whatToMake"><i class="fa fa-star text-blue"></i></a>
+    </div>
     <div class="addRecipeBtn">
-      <a href="#/newRecipe"><i class="fa fa-plus-circle text-blue"></i></a>
+      <a href="#/addRecipe"><i class="fa fa-plus-circle text-blue"></i></a>
     </div>
   </section>
 </body>

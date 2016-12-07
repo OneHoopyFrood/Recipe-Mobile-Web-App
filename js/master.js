@@ -1,16 +1,25 @@
+window.addEventListener("load", function(){
   var routes = [{
     url: "/recipeList",
     config: {
-      title: "Recipe List",
+      title: "Recipes",
       templateURL: "/recipeList/index.html",
       controller: recipeList
     }
   }, {
-    url: "/newRecipe",
+    url: "/addRecipe",
     config: {
-      title: "New Recipe",
-      templateURL: "/newRecipe/index.html",
-      controller: newRecipe
+      title: "Add Recipe",
+      templateURL: "/addEditRecipe/index.html",
+      controller: addEditRecipe
+    }
+  }, {
+    url: "/editRecipe",
+    config: {
+      title: "Edit Recipe",
+      templateURL: "/addEditRecipe/index.html",
+      controller: addEditRecipe
     }
   }]
   router(routes)
+})

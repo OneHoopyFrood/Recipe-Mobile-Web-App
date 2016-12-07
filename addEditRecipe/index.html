@@ -3,8 +3,16 @@
   <form class="addEditRecipeForm">
     <input type="text" class="form-control" name="title" placeholder="Title">
     <textarea id="recipeInstructions" name="instructions" placeholder="Directions"></textarea>
-    <button class="picUploadBtn" onclick="document.getElementById('picUpload').click()">
+    <div class="ratingSelection">
+      <button type="button"><i class="fa fa-thumbs-down text-dark-green"></i></button>
+      <button type="button"><i class="fa fa-thumbs-up text-blue"></i></button>
+      <button type="button"><i class="fa fa-heart text-red"></i></button>
+    </div>
+    <button type="button" class="btn-primary" onclick="document.getElementById('picUpload').click()">
       <i class="fa fa-upload"></i> Upload Picture
+    </button>
+    <button type="button" class="btn-success btn-large" class="save">
+      Save
     </button>
 
     <input type="file" id="picUpload" name="picture">

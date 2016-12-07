@@ -3,7 +3,7 @@ form.addEditRecipeForm {
 }
 form input:not([type="file"]),
 form textarea,
-.picUploadBtn {
+button {
   box-sizing: border-box;
   width: 100%;
   margin: 4px 0;
@@ -11,10 +11,27 @@ form textarea,
   border-radius: 3px;
   border: 1px solid #ccc;
 }
-.picUploadBtn {
-  background-color: #318935;
-  border-color: #37993b;
-  color: #ddd;
+.ratingSelection {
+  display: flex;
+}
+.ratingSelection button i.fa {
+  font-size: 1.2em;
+}
+.ratingSelection button {
+  background-color: #ddd;
+}
+.ratingSelection button:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.ratingSelection button:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+.ratingSelection button:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
 }
 #recipeInstructions {
   height: 100px;

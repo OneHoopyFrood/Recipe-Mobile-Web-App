@@ -15,18 +15,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 1.5em;
 }
-.text-blue {
-  color: #455ba6;
-}
-.text-red {
-  color: #ff5454;
-}
-.text-green {
-  color: #318935;
-}
-.text-dark-green {
-  color: #496633;
-}
+
 #header {
   background-color: #333;
   color: #ddd;
@@ -47,6 +36,10 @@ h1 {
 }
 #footer i.fa {
   font-size: 3em;
+  color: #222;
+}
+#footer a.active i.fa {
+  color: #111;
 }
 #footer div {
   text-align: center;
@@ -55,4 +48,31 @@ h1 {
 }
 #footer div:not(:last-child) {
   /*border-right: 2px groove #ccc;*/
+}
+
+.text-blue {
+  color: #3453ba;
+}
+.text-red {
+  color: #ff5454;
+}
+.text-green {
+  color: #318935;
+}
+.text-dark-green {
+  color: #496633;
+}
+.btn-primary {
+    background-color: #3453ba;
+    border-color: #2c469e;
+    color: #ddd;
+}
+.btn-success {
+  background-color: #318935;
+  border-color: #37993b;
+  color: #ddd;
+}
+.btn-large {
+  font-size: 1.3em;
+  font-weight: bold;
 }

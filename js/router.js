@@ -4,8 +4,20 @@ var router = function (routes) {
 
   function loadRoute(route) {
     $.get(route.config.templateURL).then(function (res) {
+      title.innerText = route.config.title
+      try {
+        var viewLink = document.querySelector(`#footer a[href="#${route.url}"]`)
+        if(viewLink) {
+          document.querySelectorAll("#footer a").forEach(function(match){
+            match.classList.remove("active")
+          })
+        }
+        viewLink.classList.add("active")
+      }
+      catch (e) {
+        console.error(e);
+      }
       var template = new Template(res.data)
-      title.innerText = route.config.title;
       mainView.innerHTML = template.getHtml()
       route.config.controller(mainView.querySelector(".view"))
     }).catch(function (error) {

@@ -4,6 +4,7 @@
     "title": "Salmon with mushrooms",
     "imageURL": "/content/1.jpg",
     "rating": 3,
+    "timeToCook": "30m",
     "dateAdded": "1/2/2016"
   },
   {
@@ -11,6 +12,7 @@
     "title": "Beef Muffin",
     "imageURL": "/content/2.jpg",
     "rating": 2,
+    "timeToCook": "1h",
     "dateAdded": "1/3/2016"
   },
   {
@@ -18,6 +20,7 @@
     "title": "Chicken Scampi",
     "imageURL": "/content/3.jpg",
     "rating": 1,
+    "timeToCook": "1h 30m",
     "dateAdded": "1/4/2016"
   },
   {
@@ -25,6 +28,7 @@
     "title": "Chocolate Chicken Fingers",
     "imageURL": "/content/4.jpg",
     "rating": 2,
+    "timeToCook": "15m",
     "dateAdded": "1/5/2016"
   },
   {
@@ -32,6 +36,7 @@
     "title": "Chicken Fresca with rice peppers",
     "imageURL": "/content/5.jpg",
     "rating": 2,
+    "timeToCook": "30m",
     "dateAdded": "1/6/2016"
   }
 ]

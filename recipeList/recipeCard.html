@@ -1,9 +1,14 @@
 <div class="recipeCard" style="background-image: url('{{imageURL}}')">
   <div class="text-content">
-    <h1>{{title}}</h1>
-    <div class="recipe-data">
-      <span class="rating"><i class="fa {{ratingIcon}}"></i></span>
-      <span class="date-added">{{dateAdded}}</span>
+    <div class="quick-data">
+      <span class="rating"><i class="fa {{ratingIcon}}"></i></span>&nbsp;
+      <span class=""><i class="fa fa-clock-o"></i>{{timeToCook}}</span>
+    </div>
+    <div class="shaded-text">
+      <h1>{{title}}</h1>
+      <div class="hidden">
+        <span>Added: {{dateAdded}}</span>
+      </div>
     </div>
   </div>
 </div>
